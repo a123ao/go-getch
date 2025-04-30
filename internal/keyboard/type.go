@@ -1,4 +1,4 @@
-package getch
+package keyboard
 
 // INPUT_RECORD structure represents an input event in the console input buffer
 // https://learn.microsoft.com/en-us/windows/console/input-record-str
@@ -21,7 +21,7 @@ type KEY_EVENT_RECORD struct {
 }
 
 // KEY structure represents a key event with Unicode character and virtual key code
-type KEY struct {
+type KEY_ENTRY struct {
 	UnicodeChar    uint16 // Unicode character
 	VirtualKeyCode uint16 // Virtual key code
 }
